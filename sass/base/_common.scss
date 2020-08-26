@@ -22,10 +22,18 @@ body {
   letter-spacing: 0.03em;
 }
 .list {
-  display: flex;
+  // display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .link {
   display: block;
@@ -49,9 +57,20 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  // width: 1200px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    // display: flex;
+  }
 }
 // .section.features {
 // padding-top: 94px;
