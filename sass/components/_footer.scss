@@ -1,0 +1,80 @@
+.footer {
+  background: $footer-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .soc-netw-list {
+    justify-content: space-between;
+  }
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer .webstudio {
+  margin-bottom: 20px;
+  color: $clear-white-color;
+}
+.address {
+  color: $clear-white-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-contacts {
+  flex-direction: column;
+  .link {
+    color: $footer-link-color;
+  }
+  .item {
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
+}
+.join-in,
+.subscribe {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $clear-white-color;
+}
+.wrapper-address {
+  margin-right: 69px;
+}
+.wrapper-join-in {
+  width: 206px;
+  margin-right: 94px;
+}
+
+.footer-link .link {
+  color: $clear-white-color;
+  background-color: $footer-link-bg-color;
+}
+.soc-icon-footer {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.subscribe-form {
+  display: flex;
+}
+.subscribe-form-input {
+  margin-right: 12px;
+  padding: 15px 16px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  /* outline: none; */
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

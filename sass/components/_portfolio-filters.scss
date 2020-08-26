@@ -1,0 +1,28 @@
+.filter-btn {
+  padding: 6px 22px;
+  background-color: $secondary-bg-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  border-radius: 4px;
+  transition: color 250ms $transition-timing-function,
+    background-color 250ms $transition-timing-function,
+    box-shadov 250ms $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $clear-white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+  }
+}
+.filter-list {
+  justify-content: center;
+  margin-bottom: 34px;
+
+  .item:not(:last-child) {
+    margin-right: 8px;
+  }
+}

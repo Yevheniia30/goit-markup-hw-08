@@ -1,0 +1,55 @@
+.team {
+  background-color: $secondary-bg-color;
+  .description {
+    margin-bottom: 16px;
+    color: $secondary-text-color;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+  .soc-netw-list {
+    justify-content: space-between;
+  }
+  .item {
+    width: calc((100% - 90px) / 4);
+    background: #ffffff;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.team-member {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-info {
+  padding: 30px 32px 24px;
+}
+.soc-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.soc-netw .link {
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $icons-color;
+  transition: color 250ms $transition-timing-function,
+    background-color 250ms $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $clear-white-color;
+    background-color: $accent-color;
+  }
+}
