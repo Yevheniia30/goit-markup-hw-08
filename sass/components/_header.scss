@@ -90,3 +90,12 @@
     display: none;
   }
 }
+.menu .icon-close-nav {
+  display: none;
+}
+.menu.is-open .icon-close-nav {
+  display: block;
+}
+.menu.is-open .icon-menu-nav {
+  display: none;
+}

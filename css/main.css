@@ -456,6 +456,18 @@ p {
   }
 }
 
+.menu .icon-close-nav {
+  display: none;
+}
+
+.menu.is-open .icon-close-nav {
+  display: block;
+}
+
+.menu.is-open .icon-menu-nav {
+  display: none;
+}
+
 .hero {
   width: 480px;
   margin: auto;
@@ -602,11 +614,16 @@ p {
 }
 
 .features .title {
-  display: inline-block;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .features .title {
+    text-align: center;
+  }
 }
 
 .features .description {
