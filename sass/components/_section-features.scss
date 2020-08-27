@@ -49,8 +49,11 @@
     height: 70px;
   }
   .features-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 120px;
-    padding: 25px 100px;
+    // padding: 25px 100px;
     margin-bottom: 30px;
     background-color: $secondary-bg-color;
   }

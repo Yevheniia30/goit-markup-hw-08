@@ -442,6 +442,21 @@ p {
   border-radius: 2px;
 }
 
+.menu {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
 .hero {
   width: 480px;
   margin: auto;
@@ -637,8 +652,10 @@ p {
 }
 
 .features .features-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
 }
