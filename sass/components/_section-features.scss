@@ -16,13 +16,13 @@
   }
   .item {
     @media screen and (max-width: 767px) {
-      width: 100%;
+      flex-basis: 100%;
       &:not(:last-child) {
         margin-bottom: 30px;
       }
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
       &:nth-child(odd) {
         margin-right: 30px;
       }
@@ -34,7 +34,7 @@
       // }
     }
     @media screen and (min-width: 1200px) {
-      width: calc((100% - 90px) / 4);
+      flex-basis: calc((100% - 90px) / 4);
       &:not(:last-child) {
         margin-right: 30px;
       }
