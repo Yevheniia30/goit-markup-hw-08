@@ -21,6 +21,9 @@ body {
   color: $primary-text-color;
   letter-spacing: 0.03em;
 }
+body.modal-open {
+  overflow: hidden;
+}
 .list {
   // display: flex;
   padding: 0;

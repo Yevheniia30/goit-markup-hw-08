@@ -1,0 +1,45 @@
+.menu {
+  position: absolute;
+  display: inline-flex;
+  top: 22px;
+  right: 22px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu.is-open {
+  .icon-menu-nav {
+    display: none;
+  }
+  .icon-close-nav {
+    display: block;
+  }
+}
+.menu {
+  .icon-close-nav {
+    display: none;
+  }
+  .icon-menu-nav {
+    display: block;
+  }
+}
+
+.menu-container {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+  }
+  &.is-open {
+    display: block;
+  }
+}

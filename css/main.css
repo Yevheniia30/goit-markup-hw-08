@@ -273,6 +273,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -445,55 +449,8 @@ p {
   position: relative;
 }
 
-.menu {
-  position: absolute;
-  display: inline-flex;
-  top: 22px;
-  right: 22px;
-  padding: 0;
-  margin: 0;
-  border: none;
-  background-color: transparent;
-}
-
-@media screen and (min-width: 768px) {
-  .menu {
-    display: none;
-  }
-}
-
-.menu.is-open .icon-menu-nav {
-  display: none;
-}
-
-.menu.is-open .icon-close-nav {
-  display: block;
-}
-
-.menu .icon-close-nav {
-  display: none;
-}
-
-.menu .icon-menu-nav {
-  display: block;
-}
-
-.menu-container {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: salmon;
-}
-
-.menu-container.is-open {
-  display: block;
-}
-
 .hero {
-  width: 480px;
+  max-width: 480px;
   margin: auto;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -508,13 +465,13 @@ p {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -1004,6 +961,13 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
+
 .modal-form-input {
   /* position: relative; */
   /* display: block; */
@@ -1133,10 +1097,16 @@ p {
 
 .checkbox-label {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   margin-bottom: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .icon-check {
@@ -1148,9 +1118,16 @@ p {
 }
 
 .agreement-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .agreement-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .agreement-link {
@@ -1202,5 +1179,54 @@ p {
 .send-btn {
   width: 200px;
   margin: auto;
+}
+
+.menu {
+  position: absolute;
+  display: inline-flex;
+  top: 22px;
+  right: 22px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu.is-open .icon-menu-nav {
+  display: none;
+}
+
+.menu.is-open .icon-close-nav {
+  display: block;
+}
+
+.menu .icon-close-nav {
+  display: none;
+}
+
+.menu .icon-menu-nav {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+  }
+}
+
+.menu-container.is-open {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
