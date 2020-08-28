@@ -319,7 +319,7 @@ p {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     min-width: 480px;
   }
@@ -461,12 +461,16 @@ p {
   }
 }
 
-.icon-close-nav {
+.menu.is-open .icon-menu-nav {
   display: none;
 }
 
 .menu.is-open .icon-close-nav {
   display: block;
+}
+
+.icon-close-nav {
+  display: none;
 }
 
 .hero {
