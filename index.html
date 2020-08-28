@@ -23,7 +23,13 @@
             <a class="webstudio link" href="./index.html" lang="en"
               ><span class="web">Web</span> Studio</a
             >
-            <button type="button" class="menu is-open" data-menu-button>
+            <button
+              type="button"
+              class="menu is-open"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button
+            >
               <svg
                 class="icon-menu"
                 width="40"
@@ -40,6 +46,10 @@
                 ></use>
               </svg>
             </button>
+
+            <div class="menu-container is-open" id="menu-container" data-menu>
+              контент
+            </div>
             <ul class="site-nav-list list">
               <li class="item">
                 <a
@@ -60,7 +70,7 @@
               <li class="item">
                 <a
                   class="link"
-                  href=""
+                  href="#contacts"
                   aria-label="Перейти на страницу Контакты"
                   >Контакты</a
                 >
@@ -451,7 +461,7 @@
     <!--footer-->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="wrapper-address">
+        <div class="wrapper-address" id="contacts">
           <a class="webstudio link" href="./index.html" lang="en"
             ><span class="web">Web</span> Studio</a
           >
@@ -602,5 +612,6 @@
     </div>
     <!-- </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -321,7 +321,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .container {
-    min-width: 480px;
+    max-width: 480px;
   }
 }
 
@@ -350,11 +350,8 @@ p {
 }
 
 .header {
-  position: fixed;
-  width: 100%;
   min-height: 80px;
   top: 0;
-  z-index: 10;
   background-color: #fff;
 }
 
@@ -444,6 +441,10 @@ p {
   border-radius: 2px;
 }
 
+.header-container {
+  position: relative;
+}
+
 .menu {
   position: absolute;
   display: inline-flex;
@@ -469,8 +470,26 @@ p {
   display: block;
 }
 
-.icon-close-nav {
+.menu .icon-close-nav {
   display: none;
+}
+
+.menu .icon-menu-nav {
+  display: block;
+}
+
+.menu-container {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: salmon;
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 .hero {
@@ -865,7 +884,6 @@ p {
 }
 
 .footer-container {
-  display: flex;
   align-items: baseline;
 }
 
