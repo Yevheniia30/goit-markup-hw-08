@@ -316,20 +316,18 @@ p {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    margin: 0 auto;
-    width: 480px;
+    min-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 
@@ -448,10 +446,12 @@ p {
 
 .menu {
   position: absolute;
+  display: inline-flex;
   top: 22px;
   right: 22px;
   padding: 0;
   margin: 0;
+  border: none;
   background-color: transparent;
 }
 
@@ -461,16 +461,12 @@ p {
   }
 }
 
-.menu .icon-close-nav {
+.icon-close-nav {
   display: none;
 }
 
 .menu.is-open .icon-close-nav {
   display: block;
-}
-
-.menu.is-open .icon-menu-nav {
-  display: none;
 }
 
 .hero {

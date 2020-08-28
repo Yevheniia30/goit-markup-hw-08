@@ -81,21 +81,26 @@
 }
 .menu {
   position: absolute;
+  display: inline-flex;
   top: 22px;
   right: 22px;
   padding: 0;
   margin: 0;
+  border: none;
   background-color: transparent;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.menu .icon-close-nav {
+.icon-close-nav {
   display: none;
 }
+// .menu .icon-close-nav {
+// display: none;
+// }
 .menu.is-open .icon-close-nav {
   display: block;
 }
-.menu.is-open .icon-menu-nav {
-  display: none;
-}
+// .menu.is-open .icon-menu-nav {
+// display: none;
+// }
