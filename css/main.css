@@ -388,8 +388,6 @@ p {
 
 @media screen and (min-width: 768px) {
   .header .webstudio {
-    padding-top: 24px;
-    padding-bottom: 25px;
     margin-right: 85px;
   }
 }
@@ -1252,11 +1250,7 @@ p {
 }
 
 .menu {
-  position: absolute;
   display: inline-flex;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
   padding: 0;
   margin: 0;
   border: none;
