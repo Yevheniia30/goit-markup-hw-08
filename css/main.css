@@ -388,6 +388,8 @@ p {
 
 @media screen and (min-width: 768px) {
   .header .webstudio {
+    padding-top: 24px;
+    padding-bottom: 25px;
     margin-right: 85px;
   }
 }
