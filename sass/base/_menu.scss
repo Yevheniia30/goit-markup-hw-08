@@ -1,8 +1,9 @@
 .menu {
   position: absolute;
   display: inline-flex;
-  top: 22px;
-  right: 22px;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
   padding: 0;
   margin: 0;
   border: none;
@@ -36,10 +37,20 @@
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
     background-color: #fff;
+    &.is-open {
+      display: block;
+    }
   }
-  &.is-open {
-    display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
   }
 }

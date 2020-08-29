@@ -18,109 +18,100 @@
     <!--header-->
     <header class="header">
       <div class="container header-container">
-        <div class="nav-container">
+        <!-- <div class="nav-container"> -->
+        <!-- <nav class="site-nav"> -->
+        <a class="webstudio link" href="./index.html" lang="en"
+          ><span class="web">Web</span> Studio</a
+        >
+        <button
+          type="button"
+          class="menu is-open"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="icon-menu"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-menu-nav" href="./img/sprite.svg#icon-menu"></use>
+            <use
+              class="icon-close-nav"
+              href="./img/sprite.svg#icon-close-nav"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="menu-container is-open" id="menu-container" data-menu>
           <!-- <nav class="site-nav"> -->
-            <a class="webstudio link" href="./index.html" lang="en"
-              ><span class="web">Web</span> Studio</a
-            >
-            <button
-              type="button"
-              class="menu is-open"
-              aria-expanded="false"
-              aria-controls="menu-container"
-              data-menu-button
-            >
-              <svg
-                class="icon-menu"
-                width="40"
-                height="40"
-                aria-label="Переключатель мобильного меню"
+          <!-- <a class="webstudio link" href="./index.html" lang="en" -->
+          <!-- ><span class="web">Web</span> Studio</a -->
+          <!-- > -->
+
+          <ul class="site-nav-list list">
+            <li class="item">
+              <a
+                class="link current"
+                href="./index.html"
+                aria-label="Перейти на главную страницу"
+                >Студия</a
               >
-                <use
-                  class="icon-menu-nav"
-                  href="./img/sprite.svg#icon-menu"
-                ></use>
-                <use
-                  class="icon-close-nav"
-                  href="./img/sprite.svg#icon-close-nav"
-                ></use>
-              </svg>
-            </button>
+            </li>
+            <li class="item">
+              <a
+                class="link"
+                href="./portfolio.html"
+                aria-label="Перейти на страницу Портфолио"
+                >Портфолио</a
+              >
+            </li>
+            <li class="item">
+              <a
+                class="link"
+                href="#contacts"
+                aria-label="Перейти на страницу Контакты"
+                >Контакты</a
+              >
+            </li>
+          </ul>
 
-            <div class="menu-container is-open" id="menu-container" data-menu>
-              <!-- <nav class="site-nav"> -->
-              <!-- <a class="webstudio link" href="./index.html" lang="en" -->
-              <!-- ><span class="web">Web</span> Studio</a -->
-              <!-- > -->
-              <div>
-                <ul class="site-nav-list list">
-                  <li class="item">
-                    <a
-                      class="link current"
-                      href="./index.html"
-                      aria-label="Перейти на главную страницу"
-                      >Студия</a
-                    >
-                  </li>
-                  <li class="item">
-                    <a
-                      class="link"
-                      href="./portfolio.html"
-                      aria-label="Перейти на страницу Портфолио"
-                      >Портфолио</a
-                    >
-                  </li>
-                  <li class="item">
-                    <a
-                      class="link"
-                      href="#contacts"
-                      aria-label="Перейти на страницу Контакты"
-                      >Контакты</a
-                    >
-                  </li>
-                </ul>
-                <!-- </nav> -->
-                <div class="contacts-container">
-                  <ul class="header-contacts list">
-                    <li class="item">
-                      <a
-                        class="link"
-                        href="mailto:info@devstudio.com"
-                        aria-label="Отправить письмо"
-                      >
-                        <svg
-                          class="header-contacts-icon envelope"
-                          width="16"
-                          height="11"
-                        >
-                          <use href="./img/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="link"
-                        href="tel:+380961111111"
-                        aria-label="Позвонить"
-                      >
-                        <svg
-                          class="header-contacts-icon"
-                          width="10"
-                          height="15"
-                        >
-                          <use
-                            href="./img/sprite.svg#icon-smartphone"
-                          ></use></svg
-                        >+38 096 111 11 11</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+          <!-- </nav> -->
+          <!-- <div class="contacts-container"> -->
 
-            <!-- <div class="contacts-container"> 
+          <ul class="header-contacts list">
+            <li class="item">
+              <a
+                class="link"
+                href="mailto:info@devstudio.com"
+                aria-label="Отправить письмо"
+              >
+                <svg
+                  class="header-contacts-icon envelope"
+                  width="16"
+                  height="11"
+                >
+                  <use href="./img/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="link" href="tel:+380961111111" aria-label="Позвонить">
+                <svg class="header-contacts-icon" width="10" height="15">
+                  <use href="./img/sprite.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+
+          <!-- </div> -->
+        </div>
+      </div>
+    </header>
+
+    <!-- <div class="contacts-container"> 
               <ul class="header-contacts list">
                 <li class="item">
                   <a
@@ -151,7 +142,7 @@
                 </li>
               </ul>
             </div>-->
-            <!-- <ul class="site-nav-list list"> 
+    <!-- <ul class="site-nav-list list"> 
               <li class="item">
                 <a
                   class="link current"
@@ -206,9 +197,7 @@
               >
             </li>
           </ul>-->
-        <!-- </div> -->
-      </div>
-    </header>
+    <!-- </div> -->
 
     <!--main-->
     <main class="main">
