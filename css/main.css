@@ -970,10 +970,6 @@ p {
   fill: currentColor;
 }
 
-.subscribe-form {
-  display: flex;
-}
-
 .subscribe-form-input {
   margin-right: 12px;
   padding: 15px 16px;
@@ -1280,12 +1276,20 @@ p {
   display: block;
 }
 
+.menu.is-open .icon-close-nav:hover, .menu.is-open .icon-close-nav:focus {
+  fill: #2196f3;
+}
+
 .menu .icon-close-nav {
   display: none;
 }
 
 .menu .icon-menu-nav {
   display: block;
+}
+
+.menu .icon-menu-nav:hover, .menu .icon-menu-nav:focus {
+  fill: #2196f3;
 }
 
 @media screen and (max-width: 767px) {

@@ -19,6 +19,10 @@
   }
   .icon-close-nav {
     display: block;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
   }
 }
 .menu {
@@ -27,9 +31,12 @@
   }
   .icon-menu-nav {
     display: block;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
   }
 }
-
 .menu-container {
   @media screen and (max-width: 767px) {
     position: absolute;
