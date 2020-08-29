@@ -19,6 +19,7 @@
   }
   .icon-close-nav {
     display: block;
+    transition: fill 250ms $transition-timing-function;
     &:hover,
     &:focus {
       fill: $accent-color;
@@ -31,6 +32,7 @@
   }
   .icon-menu-nav {
     display: block;
+    transition: fill 250ms $transition-timing-function;
     &:hover,
     &:focus {
       fill: $accent-color;
@@ -48,6 +50,10 @@
     padding-bottom: 60px;
     text-align: center;
     background-color: #fff;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
     &.is-open {
       display: block;
     }
