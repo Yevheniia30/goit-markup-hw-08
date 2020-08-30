@@ -15,11 +15,16 @@ img {
   height: auto;
 }
 body {
-  // padding-top: 80px;
   font-family: $main-font;
   background-color: $clear-white-color;
   color: $primary-text-color;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
 }
 body.modal-open {
   overflow: hidden;
