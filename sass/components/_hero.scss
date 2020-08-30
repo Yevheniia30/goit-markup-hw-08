@@ -1,6 +1,6 @@
 .hero {
   max-width: 480px;
-  margin: auto;
+  margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
   height: 400px;
@@ -17,8 +17,8 @@
       url(../img/hero/hero-mob1.jpg);
   }
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (-o-min-device-pixel-ratio: 2/1),
+    // screen and (-webkit-min-device-pixel-ratio: 2),
+    // screen and (-o-min-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(
@@ -36,8 +36,8 @@
       url(../img/hero/hero-tab1.jpg);
   }
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (-o-min-device-pixel-ratio: 2/1),
+    // screen and (-webkit-min-device-pixel-ratio: 2),
+    // screen and (-o-min-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(
@@ -58,8 +58,8 @@
       url(../img/hero/hero-desk1.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (-o-min-device-pixel-ratio: 2/1),
+      // screen and (-webkit-min-device-pixel-ratio: 2),
+      // screen and (-o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
