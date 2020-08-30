@@ -1,8 +1,16 @@
 .portfolio-header {
   border-bottom: 1px solid #ececec;
 }
+.title.clip {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 304px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 .portfolio-projects {
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 
   .item {
     // width: calc((100% - 60px) / 3);

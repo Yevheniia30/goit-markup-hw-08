@@ -66,6 +66,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
   @media screen and (max-width: 767px) {
     max-width: 480px;
   }
@@ -90,12 +91,18 @@ p {
 // padding-bottom: 94px;
 // }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.section-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
 }

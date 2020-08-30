@@ -1,19 +1,44 @@
+.clients .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .clients {
   .item {
     justify-content: center;
     align-items: center;
-    width: calc((100% - 150px) / 6);
-    height: 90px;
+    @media screen and (max-width: 767px) {
+      flex-basis: calc((100% - 30px) / 2);
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
+      &:nth-child(-n + 4) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: calc((100% - 60px) / 3);
+      &:not(:nth-child(3n)) {
+        margin-right: 30px;
+      }
+      &:nth-child(-n + 3) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 150px) / 6);
+      // height: 90px;
 
-    &:not(:last-child) {
-      margin-right: 30px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
   .link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 100%;
     height: 90px;
     border: 1px solid $icons-color;
     color: $icons-color;
