@@ -301,12 +301,6 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .list {
-    display: flex;
-  }
-}
-
 .link {
   display: block;
   text-decoration: none;
