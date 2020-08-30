@@ -99,10 +99,17 @@ p {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  .section-title {
-    margin-bottom: 50px;
+}
+.section-title {
+  text-align: center;
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
+    margin-bottom: 50px;
   }
 }
