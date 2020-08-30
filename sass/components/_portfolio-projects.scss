@@ -25,7 +25,10 @@
       &:nth-child(odd) {
         margin-right: 30px;
       }
-      &:not(:last-child) {
+      &:nth-child(9) {
+        margin-right: 0;
+      }
+      &:nth-child(-n + 7) {
         margin-bottom: 30px;
       }
       // &:nth-child(n + 3) {
