@@ -369,6 +369,7 @@ p {
   width: 100%;
   min-height: 60px;
   top: 0;
+  z-index: 10;
   background-color: #fff;
 }
 
